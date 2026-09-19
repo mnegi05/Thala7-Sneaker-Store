@@ -26,7 +26,7 @@
 
     • Display the service achievements: 2k+Reviews, 30k+ customers, 4.5/5 rating, High Quality.
 
-![My Project Screenshot](./restaurant_interior_1.jpg)
+![My Project Screenshot](./screenshot/hero-page.png)
 
 ### 2. Product Display Section:
 
