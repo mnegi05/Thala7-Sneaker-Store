@@ -77,6 +77,8 @@
     
     • Continue Shopping Link in the bottom of left side of the page
 
+![Shopping Cart](./screenshot/shopping-cart.png)
+
 ### 4. Payment Section :
 
 **Left container:**

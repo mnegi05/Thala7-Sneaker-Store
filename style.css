@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-color: #f56e44;
-    --secondary-color: #2c3e50;
+    --primary-color: #ff4747;
+    --secondary-color: #0438b0;
     --accent-color: #1b79b7;
     --light-blue-bg: #3498db1d;
     --text-green: #046705;
@@ -15,6 +15,7 @@
     --light-text: #666;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
+    --test-border: 1px solid firebrick;
 }
 
 body {
@@ -118,7 +119,6 @@ body {
 }
 
 .header-icons .form-group {
-    border: 1px solid #ddd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,6 @@ body {
 .header-icons .form-group i {
     justify-self: center;
 }
-
 
 .form-group input {
     width: 100%;
@@ -166,7 +165,6 @@ input[type=search] {
     text-align: center;
     padding-inline: 2rem;
     color: var(--dark-text);
-
 }
 
 .hero-content {
@@ -188,30 +186,15 @@ input[type=search] {
 .hero-buttons {
     margin-top: 10px;
     gap: 1rem;
-
 }
 
 .border25 {
     border-radius: 25px;
 }
 
-.btn {
-    text-decoration: none;
-    padding: 1rem 2rem;
-    font-weight: bold;
-    transition: all 0.3s ease;
-
-}
-
-.btn-dark {
-    background-color: var(--dark-text);
-    color: white;
-}
-
 .hero-image img {
     transform: scale(2) rotate(0);
 }
-
 
 .service-overview {
     background-color: var(--primary-color);
@@ -323,13 +306,30 @@ input[type=search] {
     text-align: start;
 }
 
-.add-to-cart a {
+.btn {
     text-decoration: none;
-    padding: 20px;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.btn-primary {
     background-color: var(--primary-color);
-    border-radius: 10px;
+    text-align: center;
     color: white;
-    align-self: start;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-dark {
+    background-color: var(--dark-text);
+    color: white;
 }
 
 .product-gallery {
@@ -340,11 +340,136 @@ input[type=search] {
     overflow-x: scroll;
     padding: 2rem;
     height: 30vh;
-
 }
 
 .product-gallery img {
     height: auto;
     width: 300px;
     box-shadow: 2px 2px 10px rgba(216, 68, 68, 0.1);
+}
+
+.shopping {
+    height: 100vh;
+    padding-top: 13vh;
+    margin-inline: 8%;
+}
+
+.shopping h1 {
+    font-size: 2.4rem;
+}
+
+.shopping-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.checkout-content,
+.cart-content,
+.checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    width: 100vh;
+    padding: 1rem 0.5rem;
+
+}
+
+.cart-heading {
+    display: flex;
+    width: 100vh;
+    padding: 0.5rem;
+
+    border-bottom: 2px solid black;
+}
+
+.cart-heading .heading {
+    border-bottom: 0;
+}
+
+.w3 {
+    width: 25%;
+}
+
+.w6 {
+    width: 50%;
+}
+
+.cart-item .item {
+    border: 1px solid var(--test-border);
+    display: flex;
+    justify-content: start;
+    gap: 100px;
+    align-items: center;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.cancel {
+    color: red;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.checkout-content {
+    border: 1px solid var(--light-text);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin: 20px;
+}
+
+.checkout-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    color: var(--light-text);
+}
+
+.checkout-items a {
+    width: 50%;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.checkout-items input {
+    width: 50%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 0px;
+}
+
+.checkout-total {
+    color: var(--dark-text);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+.payment-methods {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.payment-image {
+    width: 20vh;
 }
