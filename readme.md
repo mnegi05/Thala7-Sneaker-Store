@@ -26,7 +26,7 @@
 
     • Display the service achievements: 2k+Reviews, 30k+ customers, 4.5/5 rating, High Quality.
 
-![My Project Screenshot](./screenshot/hero-page.png)
+![Hero Page](./screenshot/hero-page.png)
 
 ### 2. Product Display Section:
 
@@ -44,6 +44,7 @@
 
     • Use Flex For Proper Structure
 
+![Product Display Page](./screenshot/product-display-page.png)
 
 ### 3. Shopping Cart Section:
 

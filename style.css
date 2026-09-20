@@ -7,7 +7,9 @@
 :root {
     --primary-color: #f56e44;
     --secondary-color: #2c3e50;
-    --accent-color: #3498db;
+    --accent-color: #1b79b7;
+    --light-blue-bg: #3498db1d;
+    --text-green: #046705;
     --light-bg: #f8f9fa;
     --dark-text: #333;
     --light-text: #666;
@@ -210,10 +212,6 @@ input[type=search] {
     transform: scale(2) rotate(0);
 }
 
-.container-fluid {
-    width: 100%;
-
-}
 
 .service-overview {
     background-color: var(--primary-color);
@@ -239,4 +237,114 @@ input[type=search] {
 .service-lists p {
     padding-top: 0;
     margin-top: -0.5rem;
+}
+
+/*  */
+
+.product {
+    height: 100vh;
+    padding-top: 13vh;
+    margin-inline: 8%;
+}
+
+.product-content {
+    height: 57vh;
+    display: flex;
+    justify-content: space-around center;
+    align-items: start;
+    gap: 5rem;
+}
+
+.product-image img {
+    height: 55vh;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.product-details h2 {
+    font-size: 2.5rem;
+}
+
+.product-details p {
+    font-size: 0.9rem;
+}
+
+.sales-details {
+    display: grid;
+    margin-top: 1rem;
+    row-gap: 3rem;
+    column-gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sales-details .price {
+    font-size: 2.5rem;
+    padding-inline: 20px;
+    grid-column: 1/2;
+    background-color: var(--light-blue-bg);
+    border-radius: 15px;
+    color: var(--accent-color);
+}
+
+.sales-details .sale-offer {
+    padding-inline: 20px;
+    grid-column: 2/6;
+}
+
+.sale-offer h4 {
+    color: var(--text-green);
+    font-size: 1.3rem;
+}
+
+.sales-details .quantity {
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.quantity a {
+    background-color: var(--light-bg);
+    border-radius: 15px;
+    padding: 20px
+}
+
+.sales-details .quantity a {
+    text-decoration: none;
+
+}
+
+.sales-details .add-to-cart {
+    grid-column: 2/5;
+    text-align: start;
+}
+
+.add-to-cart a {
+    text-decoration: none;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: white;
+    align-self: start;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    overflow: auto;
+    overflow-x: scroll;
+    padding: 2rem;
+    height: 30vh;
+
+}
+
+.product-gallery img {
+    height: auto;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(216, 68, 68, 0.1);
 }
